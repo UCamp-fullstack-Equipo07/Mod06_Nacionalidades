@@ -1,0 +1,47 @@
+:root{
+    --primary:#ddd;
+    --secondary:rgb(230, 230, 230);
+}
+
+html{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 16px;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-body{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--primary);
+}
+
+.main-input{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.main-input-nombre{
+    display: flex;
+}
+
+.main-input-edad{
+    display: flex;
+}
+
+.main-input-nac{
+    display: flex;
+}
