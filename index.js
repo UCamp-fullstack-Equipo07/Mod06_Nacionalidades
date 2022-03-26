@@ -1,6 +1,6 @@
 function getNumNat(){
     let turistas=[];
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 8; i++) {
 
         turistas[i]=
             {nombre: document.getElementById('input-nombre0'+(i+1)).value,
@@ -18,5 +18,7 @@ function getNumNat(){
 
     let Venezuela=turistas.filter(function (item){return item.nacionalidad==='Venezolano'});
     console.log(`Venezolanos: ${Venezuela.length}`);
+
+    document.getElementById('main-result').innerHTML=`Mexicanos: ${Mexico.length}`+`<br/>Peruanos: ${Peru.length}`+`<br/>Argentinos: ${Argentina.length}`+`<br/>Venezolanos: ${Venezuela.length}`
 }
 
